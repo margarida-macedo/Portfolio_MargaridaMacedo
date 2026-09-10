@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margarida Macedo | Architecture & Design Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f7f6f2;
+            --text-main: #2b2b2b;
+            --text-muted: #6e6d6a;
+            --accent-color: #8c857b;
+            --border-color: #e2dfd7;
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: var(--font-body);
+            line-height: 1.6;
+            font-weight: 300;
+        }
+
+        header {
+            padding: 40px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            background-color: var(--bg-color);
+            z-index: 100;
+        }
+
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--text-main);
+        }
+
+        .hero {
+            padding: 100px 10%;
+            max-width: 900px;
+        }
+
+        .hero h1 {
+            font-family: var(--font-heading);
+            font-size: 2.8rem;
+            font-weight: 400;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 700px;
+        }
+
+        .section-title {
+            padding: 0 10%;
+            margin-top: 60px;
+            margin-bottom: 30px;
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 0 10% 80px 10%;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border: 1px solid var(--border-color);
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-tag {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            font-family: var(--font-heading);
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .card-meta {
+            font-size: 0.8rem;
+            color: var(--accent-color);
+            border-top: 1px solid var(--border-color);
+            padding-top: 10px;
+        }
+
+        .about-section {
+            padding: 60px 10% 80px 10%;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 60px;
+        }
+
+        .about-section h2 {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .skills-list, .software-list {
+            list-style: none;
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .skills-list li, .software-list li {
+            margin-bottom: 5px;
+        }
+
+        footer {
+            padding: 60px 10%;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        footer a {
+            color: var(--text-main);
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            header, .hero, .grid, .about-section, footer, .section-title {
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+            .about-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Margarida Macedo</div>
+        <nav>
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Architecture & Spatial Design Portfolio</h1>
+        <p>Combining structural expertise across rehabilitation, residential, and urban planning with a strong foundation in visual identity and interior design[cite: 1].</p>
+    </section>
+
+    <div id="work" class="section-title">Selected Experience & Projects</div>
+    
+    <section class="grid">
+        <div class="card">
+            <div>
+                <div class="card-tag">Practice | 2024–Present</div>
+                <h3>Fróis do Amaral</h3>
+                <p>Focusing on technical project execution, municipal regulation, engineering compatibility, and site oversight across large-scale residential and healthcare developments.</p>
+            </div>
+            <div class="card-meta">Matosinhos, Portugal</div>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="card-tag">Practice | 2023–2024</div>
+                <h3>Joaquim Portela Architects</h3>
+                <p>Explored high-detail design, combining architecture, interior elements, and artwork preservation across historic residential restorations.</p>
+            </div>
+            <div class="card-meta">Porto, Portugal</div>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="card-tag">Practice | 2021–2022</div>
+                <h3>Pedro Ferreira Architecture Studio</h3>
+                <p>Managed concept and detail design for single-family housing expansions, historic building rehabilitations, and commercial presentations.</p>
+            </div>
+            <div class="card-meta">Esposende, Portugal</div>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="card-tag">Academic | Master Thesis</div>
+                <h3>Walkway of Cávado's Riverbank</h3>
+                <p>A 10-month research and design project restructuring urban-natural limits through strategic intervention points along the riverbank.</p>
+            </div>
+            <div class="card-meta">Braga, Portugal</div>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="card-tag">Academic | FAUP</div>
+                <h3>Cinema in Campanhã</h3>
+                <p>A film club project centered on open circulation galleries and social gathering spaces designed to bridge urban cultural gaps.</p>
+            </div>
+            <div class="card-meta">Porto, Portugal</div>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="card-tag">Branding & Graphic Design</div>
+                <h3>Historic Property Identity</h3>
+                <p>Developed custom typography, visual identity, color palettes, and mockups for a historic real estate asset.</p>
+            </div>
+            <div class="card-meta">Lisbon, Portugal</div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div>
+            <h2>About</h2>
+            <p>I am a Portuguese architect (FAUP, 2014–2020) with experience spanning cultural, residential, urban planning, and rehabilitation projects[cite: 1]. My work balances technical site requirements and municipal compliance with a focus on graphic design, interior curation, and architectural representation[cite: 1].</p>
+        </div>
+        <div>
+            <h2>Technical Skills</h2>
+            <ul class="software-list">
+                <li><strong>CAD / BIM:</strong> AutoCAD, Revit</li>
+                <li><strong>Visualization:</strong> Photoshop, Illustrator, InDesign, Twinmotion</li>
+                <li><strong>Languages:</strong> Portuguese (Native), English (Fluent), Italian (A2)</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div>
+            <p><strong>Contact</strong></p>
+            <p><a href="mailto:margarida.fernandesmacedo@gmail.com">margarida.fernandesmacedo@gmail.com</a></p>
+            <p>+351 915 043 437</p>
+        </div>
+        <div>
+            <p>© Margarida Macedo[cite: 1]</p>
+        </div>
+    </footer>
+
+</body>
+</html>
