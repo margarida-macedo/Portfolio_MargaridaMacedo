@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Margarida Macedo, Architect | Architecture and Design</title>
+    <title>Margarida Macedo | Architecture and Design</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
@@ -34,7 +34,7 @@
             font-size: 0.8rem;
         }
 
-        /* Fixed Navigation */
+        /* Navigation Bar */
         nav {
             position: fixed;
             top: 0;
@@ -71,7 +71,7 @@
             color: var(--text-main);
         }
 
-        /* Section Styling */
+        /* Base Section Layout */
         section {
             min-height: 100vh;
             padding: 120px 8% 80px 8%;
@@ -81,11 +81,42 @@
             border-bottom: 1px solid var(--border-color);
         }
 
+        /* 1. Cover Section */
+        #cover {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .cover-image-container {
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 40px;
+        }
+
+        .cover-image-container img {
+            width: 100%;
+            height: auto;
+            filter: grayscale(15%);
+            opacity: 0.95;
+            border: 1px solid var(--border-color);
+        }
+
+        .oval-tag {
+            border: 1px solid var(--text-main);
+            border-radius: 50%;
+            padding: 12px 35px;
+            display: inline-block;
+            font-size: 0.85rem;
+            letter-spacing: 0.25em;
+        }
+
         /* 2. Presentation Section */
         #presentation {
             max-width: 900px;
             margin: 0 auto;
-            text-transform: none; /* Set to standard case for readability */
+            text-transform: none;
             letter-spacing: 0.05em;
         }
 
@@ -162,6 +193,15 @@
             justify-content: space-between;
         }
 
+        .work-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            filter: grayscale(15%);
+            border: 1px solid var(--border-color);
+        }
+
         .work-card h4 {
             font-weight: 400;
             font-size: 0.95rem;
@@ -225,7 +265,6 @@
         <div style="font-size: 0.75rem; letter-spacing: 0.25em; margin-bottom: 20px;">Architecture and Design</div>
         
         <div class="cover-image-container">
-            <!-- Replace 'cover-render.jpg' with your image file inside your repository -->
             <img src="cover-render.jpg" alt="Architecture Render - Margarida Macedo">
         </div>
 
@@ -236,9 +275,9 @@
     <section id="presentation">
         <h2>About</h2>
         <p>The present portfolio gathers some of the works developed during the learning and practice of architecture over the last 5 years.</p>
-        <p>Within the developed practices, the portfolio focuses on various programs such as cultural, residential, urban planning, and landscaping gained across different experiences from smaller offices to bigger ones, in Portugal's fast-growing construction sector and abroad.</p>
-        <p>During the practice of architecture, in the professional scope, I developed a wide range of programmatic challenges, which went from the rehabilitation of Portuguese traditional buildings to the design of medium to large-scale services.</p>
-        <p>Along with the practice and creative process of architecture, I am deeply passionate about graphic design, interiors, and visual representation, motivating me to continuously broaden my knowledge and skills beyond spatial design.</p>
+        <p>Within the developed practices, the work focused on various programs such as cultural, residential, urban planning, and landscaping gained across different experiences from smaller offices to bigger ones, in Portugal's fast-growing construction sector and abroad[cite: 1].</p>
+        <p>During the practice of architecture, in the professional scope, I developed a wide range of programmatic challenges, which went from the rehabilitation of Portuguese traditional buildings to the design of medium to large-scale services[cite: 1].</p>
+        <p>Along with the practice and creative process of architecture, I am deeply passionate about graphic design, interiors, and visual representation, motivating me to continuously broaden my knowledge and skills beyond spatial design[cite: 1].</p>
     </section>
 
     <!-- 3. CV -->
@@ -270,22 +309,26 @@
                 <div class="date">April 2021 – Sept 2022 | Esposende</div>
             </div>
             <div class="cv-item">
-                <div class="title">H+E Architecture</div>
-                <div class="date">Sept 2019 – Dec 2019 | Casablanca</div>
+                <div class="title">H+E Architecture (architecture competition)</div>
+                <div class="date">Sept 2019 – Dec 2019 (in betweeen studies)| Casablanca</div>
+            </div>
+             <div class="cv-item">
+                <div class="title">João Nuno Macedo, Arquitetos (internship)</div>
+                <div class="date">Jun 2019 – Sept 2019 (in between studies) | Braga</div>
             </div>
         </div>
 
         <div class="cv-column">
             <h3>Skills & Software</h3>
             <div class="cv-item">
-                <p>• AutoCAD •••••</p>
-                <p>• Revit •••••</p>
-                <p>• Photoshop ••••</p>
-                <p>• InDesign •••••</p>
-                <p>• Illustrator ••••</p>
-                <p>• Twinmotion ••••</p>
-                <p>• Model Making</p>
-                <p>• Illustration</p>
+                <p>AutoCAD •••••.</p>
+                <p>Revit •••••.</p>
+                <p>Photoshop ••••..</p>
+                <p>InDesign •••••.</p>
+                <p>Illustrator ••••..</p>
+                <p>Twinmotion •••...</p>
+                <p>Model Making</p>
+                <p>Illustration</p>
             </div>
             <div class="cv-item">
                 <p>Languages: Portuguese (Native), English (Fluent), Italian (A2)</p>
@@ -297,7 +340,9 @@
     <section id="work">
         <h2>Selected Works</h2>
         <div class="work-grid">
+            
             <div class="work-card">
+                <img src="frois.jpg" alt="Fróis do Amaral Project">
                 <div>
                     <h4>01 / Fróis do Amaral</h4>
                     <p>New construction & various programs. Focus on execution projects, engineering compatibility, municipal council processes, and construction supervision.</p>
@@ -306,6 +351,7 @@
             </div>
 
             <div class="work-card">
+                <img src="portela.jpg" alt="Joaquim Portela Project">
                 <div>
                     <h4>02 / Joaquim Portela Architects</h4>
                     <p>Rehabilitation and new construction. Detailed execution drawing, interior design, custom furniture, and full-scale historic restorations.</p>
@@ -314,6 +360,7 @@
             </div>
 
             <div class="work-card">
+                <img src="pedroferreira.jpg" alt="Pedro Ferreira Project">
                 <div>
                     <h4>03 / Pedro Ferreira Architecture Studio</h4>
                     <p>Rehabilitation, single-family twin houses, healthcare services, and commercial presentation design across all project phases.</p>
@@ -322,37 +369,35 @@
             </div>
 
             <div class="work-card">
+                <img src="cinema.jpg" alt="Cinema in Campanhã Project">
                 <div>
-                    <h4>05 / Cinema in Campanhã</h4>
+                    <h4>04 / Cinema in Campanhã</h4>
                     <p>Cultural program project (FAUP) focused on creating a film club designed around social gathering and open exhibition circulation galleries.</p>
                 </div>
                 <div style="font-size: 0.7rem; color: var(--text-muted);">Porto, Portugal</div>
             </div>
 
             <div class="work-card">
+                <img src="walkway.jpg" alt="Walkway of Cávado's Riverbank">
                 <div>
-                    <h4>06 / Walkway of Cávado's Riverbank</h4>
+                    <h4>05 / Walkway of Cávado's Riverbank</h4>
                     <p>Master's thesis project. 10-month research and urban planning strategy consolidating the riverbank limits of Braga.</p>
                 </div>
                 <div style="font-size: 0.7rem; color: var(--text-muted);">Braga, Portugal</div>
             </div>
 
             <div class="work-card">
+                <img src="branding.jpg" alt="Branding Design Project">
                 <div>
-                    <h4>07 / Branding Design</h4>
+                    <h4>06 / Branding Design</h4>
                     <p>Complete visual identity system, custom typography, color palettes, and mockups developed for an historic real estate property in Lisbon.</p>
                 </div>
                 <div style="font-size: 0.7rem; color: var(--text-muted);">Lisbon, Portugal</div>
             </div>
+
         </div>
     </section>
 
-
-
-
-
-
-    
     <!-- 5. CONTACT -->
     <section id="contact">
         <h2>Contact</h2>
